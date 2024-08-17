@@ -109,14 +109,14 @@ document.getElementById('proyectoForm').addEventListener('submit', function (eve
     document.getElementById('proyectoForm').reset();
 });
 
-// Ejemplo de uso del método buscarPorNombre
+// método buscarPorNombre
 function buscarTrabajador(nombre) {
     // Limpiar la búsqueda previa
     document.getElementById('resultadoBusqueda').innerHTML = '';
     trabajadores.forEach(trabajador => trabajador.buscarPorNombre(nombre));
 }
 
-// Ejemplo de uso del método mostrarTodosLosTrabajadores
+// método mostrarTodosLosTrabajadores
 function mostrarTodosLosTrabajadores() {
     document.getElementById('proyectoTrabajador').innerHTML = '';
     trabajadores.forEach(trabajador => trabajador.mostrarDatos());
